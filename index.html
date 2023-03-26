@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Тестовое: "Верстка"</title>
+</head>
+    <body>
+        <div class="first-screen">
+            <header class="header">
+                <div class="container header-container">
+                    <a href="#" class="header__logo">
+                        <img src="./img/logo.jpg" alt="Логотип" class="header__logo_image">
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <div class="burger--wrapper">
+                                <div class="burger">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </div>
+                                <ul class="burger__menu">
+                                    <li class="burger__menu_item">
+                                        <a href="#" class="burger__menu_link">Услуги</a>
+                                    </li>
+                                    <li class="burger__menu_item">
+                                        <a href="#" class="burger__menu_link">Статьи</a>
+                                    </li>
+                                    <li class="burger__menu_item">
+                                        <a href="#" class="burger__menu_link">Вакансии</a>
+                                    </li>
+                                    <li class="burger__menu_item">
+                                        <a href="#" class="burger__menu_link">Франшиза</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <li class="nav__item nav__item--menu">
+                                <a href="#" class="nav__link">Меню</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Портфолио</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Цены</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Схема работы</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Отзывы</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Контакты</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#" class="nav__link">Гарантия</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <button class="btn btn-reset btn--header">Обратный звонок</button>
+                </div>
+            </header>
+            
+            <div class="hero-blok--wrapper">
+                <div class="container hero-container">
+                    <section class="hero">
+                        <div class="hero__info">
+                            <h1 class="hero__info_title _anim-items _anim-no-hide">Ремонт под ключ от 2900 руб/м<sup>2</sup>.</h1>
+                            <p class="hero__info_subtitle _anim-items _anim-no-hide">При заказе ремонта делаем дизайн-проект в подарок</p>
+                            <div class="hero__info_advantages advantages _anim-items _anim-no-hide">
+                                <div class="advantages__item advantages__item--exit">
+                                    <span>Бесплатный выезд в день обращения</span>
+                                </div>
+                                <div class="advantages__item advantages__item--guarantee">
+                                    <span>Гарантия на работу до 5 лет</span>
+                                </div>
+                                <div class="advantages__item advantages__item--deadlines">
+                                    <span>Жесткое соблюдение сроков</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero__calc calc _anim-items _anim-no-hide">
+                            <h3 class="calc__title">Рассчитайте стоимость ремонта</h3>
+                            <div class="calc__square">
+                                <div class="calc__square--top">
+                                    <div class="calc__text">Площадь квартиры:</div>
+                                    <div class="calc__square_value">
+                                        <span class="square_value" id="rangeValue">
+                                            68
+                                        </span>
+                                        <span>м<sup>2</sup></span>
+                                    </div>
+                                </div>
+                                <div class="calc__square--range">
+                                    <input class="styled-range range-progress" type="range" min="0" max="150" value="68">
+                                </div>
+                            </div>
+                            <div class="calc__inputs calc__inputs--type">
+                                <p class="calc__inputs_type--text calc__text">Тип жилья:</p>
+                                <div class="calc__inputs_row calc__inputs_type--row">
+                                    <div class="calc__inputs_item">
+                                        <input type="radio" id="type1" name="type" value="secondary">
+                                        <label for="type1">Вторичное жилье</label>
+                                    </div>
+                                    <div class="calc__inputs_item">
+                                        <input type="radio" id="type2" name="type" value="new">
+                                        <label for="type2">Новостройка</label>
+                                    </div>
+                                    <div class="calc__inputs_item">
+                                        <input type="radio" id="type3" name="type" value="office">
+                                        <label for="type3">Офис</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="calc__inputs">
+                                <p class="calc__inputs_name calc__text calc__inputs_name--quantity">Кол-во комнат:</p>
+                                <div class="calc__inputs_row calc__inputs_row--quantity">
+                                    <div class="calc__inputs_item">
+                                        <input type="radio" id="numberRooms1" name="quantity" value="one">
+                                        <label for="numberRooms1">1</label>
+                                    </div>
+                                    <div class="calc__inputs_item">
+                                        <input type="radio" id="numberRooms2" name="quantity" value="two">
+                                        <label for="numberRooms2">2</label>
+                                    </div>
+                                    <div class="calc__inputs_item">
+                                        <input type="radio" id="numberRooms3" name="quantity" value="three">
+                                        <label for="numberRooms3">3+</label>
+                                    </div>
+                                    <div class="calc__inputs_item">
+                                        <input type="radio" id="numberRooms4" name="quantity" value="studio">
+                                        <label for="numberRooms4">Студия</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn btn-reset btn--calc">Отправить</button>
+                        </div>
+                        <a href="#scrol" class="arrow-hero"></a>
+                    </section>
+                </div>
+                <div class="hero-blok--img _anim-items _anim-no-hide paralax">
+                    <img src="./img/img1.png" alt="Ремонт квартир">
+                </div>
+            </div>
+        </div> 
+        <main class="main"> 
+            <div class="container">
+
+            </div>
+        </main>      
+        <footer class="footer">
+            <div class="container">
+
+            </div>
+        </footer>
+        <script src="./js/scrypt.js"></script>
+    </body>
+</html>
+
+
